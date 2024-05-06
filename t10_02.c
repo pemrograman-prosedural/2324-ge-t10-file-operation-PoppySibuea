@@ -1,5 +1,5 @@
-// NIM - Name
-// NIM - Name
+// 12S23004 - Poppy Sibuea
+// 12S23020 - Rachel C.P. Simorangkir
 
 #include <stdio.h>
 #include "./libs/dorm.h"

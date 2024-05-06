@@ -1,0 +1,4 @@
+apa yang dimaksud dengan simulator dalam task 1?
+bagaimana cara sumilator menginialisai data
+apa yang diisi dalam libs repository?
+apa yang harus di selesaikan dalam repository?
