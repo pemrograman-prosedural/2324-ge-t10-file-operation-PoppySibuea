@@ -37,7 +37,7 @@ void loadStudentsFromFile(const char *filename, Student *students, int *numStude
     }
 
     *numStudents = 0;
-    while (fscanf(file, "%[^|]|%[^|]|%d|%s\n", students[*numStudents].id, students[*numStudents].name, &students[*numStudents].year, students[*numStudents].gender) != EOF) {
+    while (fscanf(file, "%s[^|]|%s[^|]|%d|%s\n", students[*numStudents].id, students[*numStudents].name, &students[*numStudents].year, students[*numStudents].gender) != EOF) {
         (*numStudents)++;
     }
 
@@ -52,7 +52,7 @@ void loadDormsFromFile(const char *filename, Dormitory *dorms, int *numDorms) {
     }
 
     *numDorms = 0;
-    while (fscanf(file, "%[^|]|%d|%s\n", dorms[*numDorms].name, &dorms[*numDorms].capacity, dorms[*numDorms].gender) != EOF) {
+    while (fscanf(file, "%s[^|]|%d|%s\n", dorms[*numDorms].name, &dorms[*numDorms].capacity, dorms[*numDorms].gender) != EOF) {
         (*numDorms)++;
     }
 
