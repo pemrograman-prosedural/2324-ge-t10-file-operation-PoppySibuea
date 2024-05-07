@@ -1,14 +1,12 @@
 #ifndef REPOSITORY_H
 #define REPOSITORY_H
 
-#include "gender.h"
-#include "dorm.h"
-#include "student.h"
+#include "data.h"
 
-/**
- * @brief define your structure, enums, globally accessible variables, and function prototypes here.
- * The actual function implementation should be defined in the corresponding source file.
- *
- */
+// Function prototypes
+void saveStudentsToFile(const char *filename, Student *students, int numStudents);
+void saveDormsToFile(const char *filename, Dormitory *dorms, int numDorms);
+void loadStudentsFromFile(const char *filename, Student *students, int *numStudents);
+void loadDormsFromFile(const char *filename, Dormitory *dorms, int *numDorms);
 
-#endif
+#endif /* REPOSITORY_H */
